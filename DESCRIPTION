@@ -1,0 +1,9 @@
+Package: MySensorCorrect
+Title: Correction functions for my self-built temperature and relative humidity sensors
+Version: 0.0.1
+Authors@R: person("Markus", "Loew", email = "m.loew@unimelb.edu.au", role = c("aut", "cre"))
+Description: Provides correction functions for my Honeywell HIH-4000 relative humidity sensors and my IST TSic 301 (IST AG, Wattwil, Switzerland) air temperature sensors. These were used as simple and cheap sensors to measure the microclimate of a wheat canopy.
+Depends: R (>= 3.0.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
