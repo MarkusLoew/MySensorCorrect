@@ -1,10 +1,10 @@
 #' Function to clean relative humidity data from self-built sensors
 #'
-#' @param v Vector that contains the measured relative humidity values
+#' @param v Vector that contains the measured relative humidity values.
 #' @param t.inter Intercept of the temperature correction. Default provided. Numeric.
 #' @param t.slope Slope of the temperature correction. Default provided. Numeric.
-#' @param min.rescale Minimal relative humidity that was found at the site. Used set the range of the rH% values. Default provided from the calibration experiment. Numeric.
-#' @param max.rescale Maximum relative humidity that was found at the site. Used set the range of the rH% values. Default provided from the calibration experiment. Numeric.
+#' @param min.rescale Minimal relative humidity that was found at the site. Used set the range of the relative humidity values. Default provided from the calibration experiment. Numeric.
+#' @param max.rescale Maximum relative humidity that was found at the site. Used set the range of the relative humidity values. Default provided from the calibration experiment. Numeric.
 #' @param poly.a First coefficient of the calibration polynom (a * v^2 + b * v + c). Default provided from calibration experiment.
 #' @param poly.b First coefficient of the calibration polynom (a * v^2 + b * v + c). Default provided from calibration experiment.
 #' @param poly.c First coefficient of the calibration polynom (a * v^2 + b * v + c). Default provided from calibration experiment.
@@ -40,7 +40,7 @@ HumSensCorrect <- function(v,
 # polynom fit mean adj r2 = 0.9805
 
      stopifnot(class(v) %in% c("numeric", "integer"))
-     stopifnot("scales" %in% rownames(installed.packages()))
+     stopifnot("scales" %in% rownames(utils::installed.packages()))
      # correct values above 100 to be 100 # not NA 
      v <- ifelse(v <= 0, NA, v)
      

@@ -1,11 +1,11 @@
 #' Function to correct air-temperature data from self-built sensors
-
+#'
 #' @param v Vector with temperature data from self-built sensor that needs correction.
 #' @param glob.rad Vector that contains values of global radiation (W/m2) for each value of v. i.e. must be same length as v.
 #' @param inter intercept of relationship between slef-built sensor and calibrated sensor. Default determined from a calibration experiment.
 #' @param slope slope of relationship between slef-built sensor and calibrated sensor. Default set from calibration experiment.
 #' @return Vector with the calibrated values.
-#' @ examples
+#' @examples
 #' \dontrun{
 #' Temp.func <- TempSensCorrect(co.temp$Temp_Avg, glob.rad = co.temp$Ave.GSR..W.m.2.)
 #' }
