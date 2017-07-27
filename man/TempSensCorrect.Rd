@@ -7,13 +7,13 @@
 TempSensCorrect(v, glob.rad, inter = -2.899, slope = 1.181)
 }
 \arguments{
-\item{v}{Vector with temperature data from self-built sensor that needs correction.}
+\item{v}{Vector with temperature data from self-built air-temperature sensor that needs correction.}
 
 \item{glob.rad}{Vector that contains values of global radiation (W/m2) for each value of v. i.e. must be same length as v.}
 
-\item{inter}{intercept of relationship between slef-built sensor and calibrated sensor. Default determined from a calibration experiment.}
+\item{inter}{intercept of relationship between self-built sensor and calibrated sensor. Default determined through a calibration experiment.}
 
-\item{slope}{slope of relationship between slef-built sensor and calibrated sensor. Default set from calibration experiment.}
+\item{slope}{slope of relationship between self-built sensor and calibrated sensor. Default determined through a calibration experiment.}
 }
 \value{
 Vector with the calibrated values.
